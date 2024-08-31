@@ -30,5 +30,11 @@
     <ClInclude Include="Core\Globals.hh">
       <Filter>Project Files\Core</Filter>
     </ClInclude>
+    <ClInclude Include="Core\Utils\Utils.hh">
+      <Filter>Project Files\Core\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Utils\Settings.hh">
+      <Filter>Project Files\Core\Utils</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

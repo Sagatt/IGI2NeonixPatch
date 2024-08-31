@@ -184,6 +184,8 @@
   <ItemGroup>
     <ClInclude Include="Core\Globals.hh" />
     <ClInclude Include="Core\Utils\Patcher.hh" />
+    <ClInclude Include="Core\Utils\Settings.hh" />
+    <ClInclude Include="Core\Utils\Utils.hh" />
     <ClInclude Include="Includes.hh" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
