@@ -5,7 +5,7 @@
 
 The IGI 2: Neonix Patch is a work-in-progress patch designed to address various gameplay issues and errors found in IGI 2: Covert Strike (version 1.3). This patch focuses on enhancing the overall gameplay experience, fixing several long-standing bugs, and improving the game’s performance and compatibility with modern systems.
 
-###Discord:
+### Discord:
 [Neonix Modding Team Discord Server](https://discord.gg/GdXMbbVUcE).
 
 ### Major Fixes:
