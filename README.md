@@ -1,12 +1,12 @@
-[![Download Latest Release](https://img.shields.io/github/v/release/Sagatt/IGI2NeonixPatch?display_name=release&label=Download%20Latest%20Release&color=21ABC7)](https://github.com/Sagatt/IGI2NeonixPatch/releases/latest/download/IGI2NeonixPatch.zip)
-[![Downloads](https://img.shields.io/github/downloads/Sagatt/IGI2NeonixPatch/total?label=Total%20Downloads&color=ED1459)](#)
-[![Latest Downloads](https://img.shields.io/github/downloads/Sagatt/IGI2NeonixPatch/latest/total?color=ED1459&label=Latest%20Downloads)](#)
-
+[![Download Latest Release](https://img.shields.io/github/v/release/Sagatt/IGI2NeonixPatch?display_name=release&label=Download%20Latest%20Release&color=21ABC7)](https://github.com/Sagatt/IGI2NeonixPatch/releases)
 [![LOGO](https://staticdelivery.nexusmods.com/mods/5664/images/8/8-1726626244-2078707165.png)](#)
 
 ## IGI 2: Neonix Patch
 
 The IGI 2: Neonix Patch is a work-in-progress patch designed to address various gameplay issues and errors found in IGI 2: Covert Strike (version 1.3). This patch focuses on enhancing the overall gameplay experience, fixing several long-standing bugs, and improving the game’s performance and compatibility with modern systems.
+
+###Discord:
+[Neonix Modding Team Discord Server](https://discord.gg/GdXMbbVUcE).
 
 ### Major Fixes:
 
@@ -32,7 +32,7 @@ The IGI 2: Neonix Patch is a work-in-progress patch designed to address various 
 - **Widescreen HUD Adjustment:** Optimizes the HUD for widescreen resolutions, ensuring a cleaner and more usable interface.
 
 ## Installation
-1. Download the release build of [IGI 2: Neonix Patch](https://github.com/Sagatt/IGI2NeonixPatch/releases/latest/download/IGI2NeonixPatch.zip).
+1. Download the release build of [IGI 2: Neonix Patch](https://github.com/Sagatt/IGI2NeonixPatch/releases).
 2. Open the downloaded ZIP file in archive software like WinRar/7-Zip.
 3. Extract all files inside the ZIP file to the game folder.
 
