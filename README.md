@@ -38,3 +38,32 @@ The IGI 2: Neonix Patch is a work-in-progress patch designed to address various 
 
 > [!NOTE]  
 > If you're using a non-v1.3 game executable, the patch may not work correctly. Ensure you have the correct version of the game for full functionality.
+
+## CC Attribution-NonCommercial-NoDerivs 4.0 International
+
+To add a CC BY-NC-ND License to your project, just add the following to your
+`README.md`. You should also copy the corresponding [license text
+file](LICENSE-CC-BY-NC-ND) and rename it to `LICENSE`.
+
+```markdown
+Shield: [![CC BY-NC-ND 4.0][cc-by-nc-nd-shield]][cc-by-nc-nd]
+
+This work is licensed under a
+[Creative Commons Attribution-NonCommercial-NoDerivs 4.0 International License][cc-by-nc-nd].
+
+[![CC BY-NC-ND 4.0][cc-by-nc-nd-image]][cc-by-nc-nd]
+
+[cc-by-nc-nd]: http://creativecommons.org/licenses/by-nc-nd/4.0/
+[cc-by-nc-nd-image]: https://licensebuttons.net/l/by-nc-nd/4.0/88x31.png
+[cc-by-nc-nd-shield]: https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg
+```
+Shield: [![CC BY-NC-ND 4.0][cc-by-nc-nd-shield]][cc-by-nc-nd]
+
+This work is licensed under a
+[Creative Commons Attribution-NonCommercial-NoDerivs 4.0 International License][cc-by-nc-nd].
+
+[![CC BY-NC-ND 4.0][cc-by-nc-nd-image]][cc-by-nc-nd]
+
+[cc-by-nc-nd]: http://creativecommons.org/licenses/by-nc-nd/4.0/
+[cc-by-nc-nd-image]: https://licensebuttons.net/l/by-nc-nd/4.0/88x31.png
+[cc-by-nc-nd-shield]: https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg
