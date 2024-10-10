@@ -11,25 +11,25 @@ The IGI 2: Neonix Patch is a work-in-progress patch designed to address various 
 ### Major Fixes:
 
 - **Weapon Correct FPS Animations:** Restores accurate first-person shooter animations for smoother weapon handling.
+- **HD Textures:** High definition and properly color corrected character textures and loading screens.
 - **Mission Restart Camera Fix:** Fixes the broken camera when restarting missions or interacting with map computers.
 - **Mouse and Input Fixes:** Fixes input-related issues when moving the mouse or alt-tabbing while pausing the game.
-- **Windowed Mode Mouse Cursor Fix:** Restores proper mouse cursor functionality in windowed mode.
-- **Borderless Windowed Mode:** Changes windowed style to borderless mode for better performance and proper rendering over the taskbar.
 
 ### Minor Fixes:
 
-- **Objectives Camera Fix:** Resolves the camera position breaking after closing the objectives screen.
 - **Alt-Key Bug:** Fixes the bug where the Alt key remains held after alt-tabbing, causing unintended toggling of fullscreen when pressing Enter.
 - **Pause Menu Camera Shake Fix:** Removes the annoying camera shaking when pausing the game.
+- **Windowed Mode Mouse Cursor Fix:** Restores proper mouse cursor functionality in windowed mode.
+- **Borderless Windowed Mode:** Changes windowed style to borderless mode for better performance and proper rendering over the taskbar
 
 ### Work in progress:
 
 - **World Interaction FPS Fix:** Ensures correct frame rate when interacting with objects in the world (e.g., dropping weapons, interacting with doors).
+- **Map fixes:** Correct many issues with the original game maps, and also re-calculate all their lightmaps.
 - **Improved Character Movement:** Removes the clunky and rigid movement, making character control smoother and more similar to the original IGI 1.
 - **Custom FOV Adjustment:** Allows players to customize their field of view (FOV) for better gameplay perspective.
 - **Weapon Laser Lag:** Fixes the lagged behavior of the weapon laser.
 - **Gun animation Freeze:** Fixes an issue where holding right-click freezes the gun animation.
-- **Widescreen HUD Adjustment:** Optimizes the HUD for widescreen resolutions, ensuring a cleaner and more usable interface.
 
 ## Installation
 1. Download the release build of [IGI 2: Neonix Patch](https://github.com/Sagatt/IGI2NeonixPatch/releases).
