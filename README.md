@@ -1,5 +1,5 @@
 [![Download Latest Release](https://img.shields.io/github/v/release/Sagatt/IGI2NeonixPatch?display_name=release&label=Download%20Latest%20Release&color=21ABC7)](https://github.com/Sagatt/IGI2NeonixPatch/releases)
-[![LOGO](https://staticdelivery.nexusmods.com/mods/5664/images/8/8-1726626244-2078707165.png)](#)
+[![LOGO](https://staticdelivery.nexusmods.com/mods/5664/images/8/8-1726626244-2078707165.png)](#) [![CC BY-NC-ND 4.0][cc-by-nc-nd-shield]][cc-by-nc-nd]
 
 ## IGI 2: Neonix Patch
 
