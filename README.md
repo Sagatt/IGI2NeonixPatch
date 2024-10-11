@@ -30,6 +30,7 @@ The IGI 2: Neonix Patch is a work-in-progress patch designed to address various 
 - **Custom FOV Adjustment:** Allows players to customize their field of view (FOV) for better gameplay perspective.
 - **Weapon Laser Lag:** Fixes the lagged behavior of the weapon laser.
 - **Gun animation Freeze:** Fixes an issue where holding right-click freezes the gun animation.
+- **Animations play/shake jitter:** The animations seem to still move and jitter if you pause the game.
 
 ## Installation
 1. Download the release build of [IGI 2: Neonix Patch](https://github.com/Sagatt/IGI2NeonixPatch/releases).
