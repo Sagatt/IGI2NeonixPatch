@@ -66,11 +66,21 @@ namespace Hooks
         Utils::QCamera_InitCurrent();
     }
 
-    void __cdecl CutScene_CreateHandler(void* cutscene)
+    void __cdecl CutScene_RunHandler(void* cutscene)
     {
-        *reinterpret_cast<int*>(0x8368B40) = 0; // Disable thermal vision
+        reinterpret_cast<void(__cdecl*)(void*)>(0x43E160)(cutscene);
 
-        reinterpret_cast<void(__cdecl*)(void*)>(0x43DDE0)(cutscene);
+        static bool sCutSceneRunning = false;
+        bool cutSceneRunning = Utils::CutScene_IsRunning();
+
+        if (cutSceneRunning != sCutSceneRunning)
+        {
+            if (cutSceneRunning) {
+                *reinterpret_cast<int*>(0x8368B40) = 0; // Disable thermal vision
+            }
+
+            sCutSceneRunning = cutSceneRunning;
+        }
     }
 
     void __cdecl CutScene_RemoveHandler(void* p_CutScene)
@@ -146,7 +156,11 @@ namespace Hooks
             mov eax, gGlobals.mThirdpersonFOV
        
         jmp_back:
-            mov [esp + 0xC], eax
+            fld dword ptr [esp + 0xC]
+            mov dword ptr [esp + 0xC], eax
+            fld dword ptr [esp + 0xC]
+            fmul
+            fstp dword ptr [esp + 0xC]
             mov eax, 0x575D50
             jmp eax
         }
@@ -187,7 +201,7 @@ namespace Core
 
         ApplyType<void*>(0x44B9E3, Direct3D_SwapBuffers);
         ApplyType<void*>(0x531BEA, Computer_DeleteHandler);
-        ApplyType<void*>(0x43E62D, CutScene_CreateHandler);
+        ApplyType<void*>(0x43E63F, CutScene_RunHandler);
         ApplyType<void*>(0x43E767, CutScene_RemoveHandler);
         ApplyType<void*>(0x402ECE, Flow_RunHandler);
         ApplyType<void*>(0x514A30, Human_GetHumanCameraInfoHandler);
