@@ -70,16 +70,8 @@ namespace Hooks
     {
         reinterpret_cast<void(__cdecl*)(void*)>(0x43E160)(cutscene);
 
-        static bool sCutSceneRunning = false;
-        bool cutSceneRunning = Utils::CutScene_IsRunning();
-
-        if (cutSceneRunning != sCutSceneRunning)
-        {
-            if (cutSceneRunning) {
-                *reinterpret_cast<int*>(0x8368B40) = 0; // Disable thermal vision
-            }
-
-            sCutSceneRunning = cutSceneRunning;
+        if (Utils::CutScene_IsRunning()) {
+            *reinterpret_cast<int*>(0x8368B40) = 0; // Disable thermal vision
         }
     }
 
