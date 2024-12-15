@@ -181,8 +181,8 @@ namespace Core
         ApplyType<uint32_t>(0x40469E, WS_POPUP);
         ApplyType<uint32_t>(0x4046AE, WS_POPUP);
 
-        // Fix thirdperson been inverted and having high sensitivity.
-        ApplyType(0x6BFDF0, -0.5f);
+        // Fix thirdperson having high sensitivity.
+        ApplyType(0x6BFDF0, Settings::GetInteger("Camera", "InvertThirdperson", 0) ? -0.5f : 0.5f);
     }
 
     void InitializeHooks()
