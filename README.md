@@ -8,34 +8,62 @@ The IGI 2: Neonix Patch is a work-in-progress patch designed to address various 
 ### Discord:
 [Neonix Modding Team Discord Server](https://discord.gg/GdXMbbVUcE).
 
-### Major Fixes:
-
-- **Weapon Correct FPS Animations:** Restores accurate first-person shooter animations for smoother weapon handling.
-- **HD Textures:** High definition and properly color corrected character textures and loading screens.
-- **Mission Restart Camera Fix:** Fixes the broken camera when restarting missions or interacting with map computers.
-- **Mouse and Input Fixes:** Fixes input-related issues when moving the mouse or alt-tabbing while pausing the game.
-
-### Minor Fixes:
-
-- **Alt-Key Bug:** Fixes the bug where the Alt key remains held after alt-tabbing, causing unintended toggling of fullscreen when pressing Enter.
-- **Pause Menu Camera Shake Fix:** Removes the annoying camera shaking when pausing the game.
-- **Windowed Mode Mouse Cursor Fix:** Restores proper mouse cursor functionality in windowed mode.
-- **Borderless Windowed Mode:** Changes windowed style to borderless mode for better performance and proper rendering over the taskbar
-
-### Work in progress:
-
-- **World Interaction FPS Fix:** Ensures correct frame rate when interacting with objects in the world (e.g., dropping weapons, interacting with doors).
-- **Map fixes:** Correct many issues with the original game maps, and also re-calculate all their lightmaps.
-- **Improved Character Movement:** Removes the clunky and rigid movement, making character control smoother and more similar to the original IGI 1.
-- **Custom FOV Adjustment:** Allows players to customize their field of view (FOV) for better gameplay perspective.
-- **Weapon Laser Lag:** Fixes the lagged behavior of the weapon laser.
-- **Gun animation Freeze:** Fixes an issue where holding right-click freezes the gun animation.
-- **Animations play/shake jitter:** The animations seem to still move and jitter if you pause the game.
+- If there is some issue/request just open new issue and fill out the predefined template.
 
 ## Installation
 1. Download the release build of [IGI 2: Neonix Patch](https://github.com/Sagatt/IGI2NeonixPatch/releases).
 2. Open the downloaded ZIP file in archive software like WinRar/7-Zip.
 3. Extract all files inside the ZIP file to the game folder.
+
+
+## Known Issues
+- When alt-tabbing and coming back to the game you might experience a slightly sped up gun animation for a few seconds.
+
+## INI Settings
+- All these options are configurable in 'settings.ini'. The file is automatically created when launching game for the first time with the patch otherwise you can create it manually.
+- Most options are configurable in game options.
+```ini
+[IGI2]
+Windowed=1         ; Set game to borderless mode
+SkipIntroScreens=0 ; Skips intro-screens of the game
+
+[Camera]
+FirstpersonFOV=100 ; Alters the FOV of the firstperson mode
+ThirdpersonFOV=100 ; Alters the FOV of the thirdperson mode
+FixThirdperson=0   ; Inverts third-person mouse movement
+```
+
+## List of Patches
+### Additions:
+- **HD Textures:** High definition and properly color-corrected character textures and loading screens.
+- **Custom FOV Adjustment:** Allows players to customize their field of view (FOV) for better gameplay perspective.
+- **More accurate sensitivity slider:** Adds a bigger sensitivity mouse slider sensitivity onto the game for better accuracy. 
+
+### Fixes:
+- **Weapon Correct FPS Animations:** Restores accurate frames per second for the animations providing a smoother weapon handling.
+- **Mission Restart Camera Fix:** Fixes the broken camera when restarting missions or interacting with map computers.
+- **Mouse and Input Fixes:** Fixes input-related issues when moving the mouse or alt-tabbing while pausing the game.
+- **Alt-Key Bug:** Fixes the bug where the Alt key remains held after alt-tabbing, causing unintended toggling of fullscreen when pressing Enter.
+- **Pause Menu Camera Shake Fix:** Removes the annoying camera shaking when pausing the game.
+- **Windowed Mode Mouse Cursor Fix:** Restores proper mouse cursor functionality in windowed mode.
+- **Improved Character Movement:** Removes the clunky and rigid movement, making character control smoother and more similar to the original IGI 1.
+- **Fixed Mouse Inversion & Wrong Speed:** Fixes the mouse being inverted and incorrect mouse speed.
+- **Fixed Objects Stuttering While Game Is Paused:** Resolves object stuttering when pausing the game.
+- **Fixed Weapon Animations While Game Is Paused:** Corrects weapon animations still playing when the game is paused.
+- **Fixed Thermal Vision in Cutscenes:** Ensures thermal vision is not enabled in cutscenes when it shouldn't be.
+- **Fixed SPAS-12 Walk and Run Animations:** Corrects the walking and running animations for the SPAS-12 shotgun.
+
+### Improvements:
+- **Borderless Windowed Mode:** Changes windowed style to borderless mode for better performance and proper rendering over the taskbar.
+
+### Work in Progress:
+- **World Interaction FPS Fix:** Ensures correct frame rate when interacting with objects in the world (e.g., dropping weapons, interacting with doors, cutscenes).
+- **Flickering in Cutscenes:** Ongoing investigation and fixes for flickering issues in cutscenes.
+- **Main Menu Lag:** Working on reducing lag in the main menu.
+- **Weapon Sound Delay After Grenade Explosion:** After throwing and exploding a grenade, switching to another weapon causes a delay in weapon firing sound for a few seconds. Fix in progress.
+- **Map Fixes:** Correcting various issues with the original game maps and recalculating their lightmaps.
+- **Weapon Laser Lag:** Fixing lag in weapon laser behavior.
+- **Gun Animation Freeze:** Fixing the issue where holding right-click freezes the gun animation.
 
 > [!NOTE]  
 > If you're using a non-v1.3 game executable, the patch may not work correctly. Ensure you have the correct version of the game for full functionality.
