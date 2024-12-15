@@ -11,7 +11,7 @@ The IGI 2: Neonix Patch is a work-in-progress patch designed to address various 
 - If there is some issue/request just open new issue and fill out the predefined template.
 
 ## Installation
-1. Download the release build of [IGI 2: Neonix Patch](https://github.com/Sagatt/IGI2NeonixPatch/releases).
+1. Download the release build of [IGI 2: Neonix Patch](https://github.com/Sagatt/IGI2NeonixPatch/releases) or the full version at [Nexusmods](https://www.nexusmods.com/igi2covertstrike/mods/8) .
 2. Open the downloaded ZIP file in archive software like WinRar/7-Zip.
 3. Extract all files inside the ZIP file to the game folder.
 
