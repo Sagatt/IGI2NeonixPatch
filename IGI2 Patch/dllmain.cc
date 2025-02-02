@@ -95,7 +95,7 @@ namespace Hooks
         bool* pFPSLock = reinterpret_cast<bool*>(0x6D8858);
         bool isFPSLock = *pFPSLock;
 
-        if (gamePaused) {
+        if (gamePaused || Utils::CutScene_IsRunning()) {
             *pFPSLock = true;
         }
 
