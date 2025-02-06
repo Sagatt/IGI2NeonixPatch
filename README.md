@@ -52,13 +52,13 @@ FixThirdperson=0   ; Inverts third-person mouse movement
 - **Fixed Weapon Animations While Game Is Paused:** Corrects weapon animations still playing when the game is paused.
 - **Fixed Thermal Vision in Cutscenes:** Ensures thermal vision is not enabled in cutscenes when it shouldn't be.
 - **Fixed SPAS-12 Walk and Run Animations:** Corrects the walking and running animations for the SPAS-12 shotgun.
+- **Flickering in Cutscenes:** Fixed flickering objects/npcs in cutscenes.
 
 ### Improvements:
 - **Borderless Windowed Mode:** Changes windowed style to borderless mode for better performance and proper rendering over the taskbar.
 
 ### Work in Progress:
 - **World Interaction FPS Fix:** Ensures correct frame rate when interacting with objects in the world (e.g., dropping weapons, interacting with doors, cutscenes).
-- **Flickering in Cutscenes:** Ongoing investigation and fixes for flickering issues in cutscenes.
 - **Main Menu Lag:** Working on reducing lag in the main menu.
 - **Weapon Sound Delay After Grenade Explosion:** After throwing and exploding a grenade, switching to another weapon causes a delay in weapon firing sound for a few seconds. Fix in progress.
 - **Map Fixes:** Correcting various issues with the original game maps and recalculating their lightmaps.
