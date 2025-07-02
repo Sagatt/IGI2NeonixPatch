@@ -183,6 +183,12 @@ namespace Core
 
         // Fix thirdperson having high sensitivity.
         ApplyType(0x6BFDF0, Settings::GetInteger("Camera", "InvertThirdperson", 0) ? -0.5f : 0.5f);
+
+        // Fix mouse sensitivity slider.
+        ApplyBytes(0x53B93A, { 0x68, 0xFE });
+        ApplyBytes(0x53B94D, { 0x68, 0xFE });
+        ApplyBytes(0x53B997, { 0x68, 0xFE });
+        ApplyBytes(0x53B9AE, { 0x68, 0xFE });
     }
 
     void InitializeHooks()
