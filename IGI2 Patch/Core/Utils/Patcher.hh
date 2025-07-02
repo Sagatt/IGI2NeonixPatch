@@ -23,6 +23,12 @@ namespace Patcher
         return ApplyData(reinterpret_cast<void*>(p_Address), (void*)(p_Bytes.begin()), sSize);
     }
 
+    template <size_t N>
+    __forceinline bool ApplyBytes(uintptr_t p_Address, const uint8_t(&p_Bytes)[N])
+    {
+        return ApplyData(reinterpret_cast<void*>(p_Address), (void*)p_Bytes, N);
+    }
+
     __forceinline bool ApplyByte(uintptr_t p_Address, uint8_t p_Byte)
     {
         return ApplyBytes(p_Address, { p_Byte });

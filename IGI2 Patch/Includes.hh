@@ -26,3 +26,4 @@
 
 
 #include "Core/Globals.hh"
+#include "Core/AIVoiceTable.hh"
