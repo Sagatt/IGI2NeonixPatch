@@ -182,6 +182,7 @@
     <ClCompile Include="dllmain.cc" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Core\AIVoiceTable.hh" />
     <ClInclude Include="Core\Globals.hh" />
     <ClInclude Include="Core\Utils\Patcher.hh" />
     <ClInclude Include="Core\Utils\Settings.hh" />
