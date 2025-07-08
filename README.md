@@ -15,7 +15,22 @@ The IGI 2: Neonix Patch is a work-in-progress patch designed to address various 
 2. Open the downloaded ZIP file in archive software like WinRar/7-Zip.
 3. Extract all files inside the ZIP file to the game folder.
 
+## Getting Started
 
+### Prerequisites
+- Visual Studio: The project is designed to be built using Visual Studio.
+- Clang-CL (msvc compatibility version) 
+
+### Building the Project
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/Sagatt/IGI2NeonixPatch.git
+   
+2. Open the project solution in Visual Studio.
+3. Build the project.
+ 
 ## Known Issues
 - When alt-tabbing and coming back to the game you might experience a slightly sped up gun animation for a few seconds.
 
@@ -37,7 +52,8 @@ FixThirdperson=0   ; Inverts third-person mouse movement
 ### Additions:
 - **HD Textures:** High definition and properly color-corrected character textures and loading screens.
 - **Custom FOV Adjustment:** Allows players to customize their field of view (FOV) for better gameplay perspective.
-- **More accurate sensitivity slider:** Adds a bigger sensitivity mouse slider sensitivity onto the game for better accuracy. 
+- **More accurate sensitivity slider:** Adds a bigger sensitivity mouse slider sensitivity onto the game for better accuracy.
+- **Partially restored cut NPC Voice Lines:** Our team managed to partially restore some of the cut audio lines for the enemy AIs in the game.
 
 ### Fixes:
 - **Weapon Correct FPS Animations:** Restores accurate frames per second for the animations providing a smoother weapon handling.
@@ -64,9 +80,14 @@ FixThirdperson=0   ; Inverts third-person mouse movement
 - **Map Fixes:** Correcting various issues with the original game maps and recalculating their lightmaps.
 - **Weapon Laser Lag:** Fixing lag in weapon laser behavior.
 - **Gun Animation Freeze:** Fixing the issue where holding right-click freezes the gun animation.
+- **NPC Anim Reactions:** To restore cut AI NPCs reactions to being shot at different body parts.
 
 > [!NOTE]  
 > If you're using a non-v1.3 game executable, the patch may not work correctly. Ensure you have the correct version of the game for full functionality.
+
+## Contributing
+
+Feel free to contribute to this project by opening issues or submitting pull requests. Bug reports, feature requests, donations and suggestions are welcome.
 
 ## CC Attribution-NonCommercial-NoDerivs 4.0 International
 
