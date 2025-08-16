@@ -34,8 +34,8 @@ namespace Hooks
             xor eax, eax
 
             mov ecx, 0x85402F4
-            mov [ecx], eax
-            mov [ecx + 0x4], eax
+            mov[ecx], eax
+            mov[ecx + 0x4], eax
         }
 
         return 1;
@@ -118,14 +118,14 @@ namespace Hooks
                 mov esi, p_Human
                 add esi, 0x620
 
-                mov [esi], eax
-                mov [esi + 0x4], eax
-                mov [esi + 0x8], eax
+                mov[esi], eax
+                mov[esi + 0x4], eax
+                mov[esi + 0x8], eax
             }
 
             Helper::HumanPlayer_ResetAngleInput();
-        } 
-        
+        }
+
         reinterpret_cast<void(__cdecl*)(void*, void*)>(0x50F320)(p_Human, p_CameraInfo);
     }
 
@@ -144,17 +144,17 @@ namespace Hooks
             mov eax, gGlobals.mFirstpersonFOV
             jmp jmp_back
 
-        jmp_thirdperson:
+            jmp_thirdperson :
             mov eax, gGlobals.mThirdpersonFOV
-       
-        jmp_back:
-            fld dword ptr [esp + 0xC]
-            mov dword ptr [esp + 0xC], eax
-            fld dword ptr [esp + 0xC]
-            fmul
-            fstp dword ptr [esp + 0xC]
-            mov eax, 0x575D50
-            jmp eax
+
+                jmp_back :
+            fld dword ptr[esp + 0xC]
+                mov dword ptr[esp + 0xC], eax
+                fld dword ptr[esp + 0xC]
+                fmul
+                fstp dword ptr[esp + 0xC]
+                mov eax, 0x575D50
+                jmp eax
         }
     }
 }
@@ -190,6 +190,11 @@ namespace Core
         ApplyBytes(0x53B997, { 0x68, 0xFE });
         ApplyBytes(0x53B9AE, { 0x68, 0xFE });
 
+        // Game intros patch
+        ApplyBytes(0x6A6D04, { 0x2E, 0x2F, 0x73, 0x63, 0x72, 0x65, 0x65, 0x6E, 0x73, 0x2F, 0x69, 0x6E, 0x74, 0x72, 0x6F, 0x2F, 0x00 });
+        ApplyBytes(0x6A6D52, { 0x61, 0x76, 0x69 });
+        ApplyBytes(0x6A6D64, { 0x61, 0x76, 0x69 });
+
         // Fix cut audio lines.
         ApplyBytes(0x76BDC0, AIVoiceTable);
         ApplyBytes(0x4A5852, {
@@ -199,7 +204,7 @@ namespace Core
             0x00, 0x00, 0x00, 0x8B, 0x4F, 0x74, 0xA1, 0xEC, 0x85, 0x36, 0x08, 0x6A, 0x08, 0x83, 0xC0, 0x48,
             0x89, 0x8E, 0x90, 0xC7, 0x76, 0x00, 0xE8, 0xA3, 0x91, 0x0A, 0x00, 0xD1, 0xE6, 0x03, 0xC6, 0xC1,
             0xE0, 0x03
-        });
+            });
         ApplyBytes(0x49EB45, AIVoiceNopPatch);
     }
 
